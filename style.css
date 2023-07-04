@@ -1,0 +1,343 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: transparent;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    background: transparent;
+    color: white;
+    position: fixed;
+    z-index: 10;
+}
+.nav-contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20%;
+    background: #FFCFF7;
+    height: 100%;
+    width: 60%;
+    border-radius: 30px;
+}
+.nav-section{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-section a{
+    text-decoration: none;
+    color: #A30F0F;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+.nav-contents img{
+    flex-basis: 20%;
+    height: 130%;
+    object-fit: contain;
+}
+.home{
+    background:url(./img/home-bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;        
+}
+.home-left{
+    flex-basis: 50%;
+}
+.home-left h1{
+    max-width: 350px;
+    margin-left: 260px;
+    margin-top: 150px;
+    font-family: 'Grandstander', cursive;
+    font-size: 70px;
+}
+.home-left p{
+    margin-top: 15px;
+    max-width: 400px;
+    margin-left: 260px;
+    font-family: 'Grandstander', cursive;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+}
+.home-left button{
+    margin-left: 260px;
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background: #F3CB60;
+    border-radius: 30px;
+    font-family: 'Grandstander', cursive;
+    font-size: 17px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-style: none;
+}
+.home-left button::before{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #FFCFF7;
+    border-radius: 30px;
+    transition: 0.5s ease;
+    z-index: -1;
+}
+.home-left button:hover::before{
+    height: 100%;
+}
+.home-right img{
+    margin-left: 30px;
+    margin-top: 150px;
+    width: 60%;
+}
+
+
+.whats-new {
+    background: #DAEEFF;
+    height: 80vh;
+    width: 100%;
+    margin-top: -3px;
+    padding-top: 20px;
+}
+.whats-new h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Grandstander', cursive;
+}
+.new{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10%;
+    width: 80%;
+    height: 450px;
+    margin-top: 30px;
+}
+.card{
+    width: 25%;
+    height: 360px;
+    background: transparent;
+    padding-top: 10px;
+}
+.card:hover.card img{
+    transform: scale(1.1);
+}
+.card:hover.card .arrow{
+    animation: zoom 1s ease infinite;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.card img{
+    display: block;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 20px;
+    transition: ease .5s;
+}
+.card h2{
+    margin-top: -10px;
+    text-align: center;
+}
+.card p{
+    max-width: 250px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.arrow{
+    display: block;
+    margin: auto;
+    width:45px;
+    text-align: center;
+    height: 45px;
+    background-color: #F3CB60;
+    border-radius: 50%;
+    font-size: 25px;
+    padding-top: 3px;
+    z-index: 200;
+}
+
+
+.about-us{
+    margin-top: -3px;
+    height: 100vh;
+    background:#F3CB60;
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+}
+.about-us h1{
+    margin-top: 22px;
+    text-align: center;
+    font-family: 'Grandstander', cursive;
+    font-size: 60px;
+}
+.about-us .first-desc{
+    position: absolute;
+    top: 130px;
+    left: 900px;
+    max-width: 430px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.disc{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: #ffdf8a;
+    position: absolute;
+    top:317px ;
+    left: 950px;
+}
+.about-us img{
+    position: absolute;
+    top: 250px;
+    width: 17%;
+    left: 950px;
+    transform: rotate(-50deg);
+}
+.sec-desc{
+    position: absolute;
+    top: 350px;
+    left: 240px;
+    max-width: 430px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.about-us .about-buttons button{
+    width: 150px;
+    height: 50px;
+    background: #8d4e00;
+    border-radius: 30px;
+    font-family: 'Grandstander', cursive;
+    font-size: 17px;
+    border-style: none;
+    font-weight: 500;
+    box-shadow: 3px 3px;
+}
+.about-us .about-buttons button:active{
+    transform: translateY(3px);
+    box-shadow: none;
+}
+.about-buttons{
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    position: absolute;
+    top: 570px;
+    left:240px ;
+    
+}
+.disc-2{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: #ffdf8a;
+    position: relative;
+    top:20px ;
+    left: 332px;
+}
+.disc-3{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background:#8d4e00;
+    position: absolute;
+    top:42px ;
+    left: 42px;
+}
+.disc-3 img{
+    width: 150%;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: -37px;
+    left: -42px;
+}
+
+
+footer{
+    width: 100%;
+    background: #FFCFF7;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+footer h1{
+    flex-basis: 100%;
+    font-size: 40px;
+    text-align: center;
+}
+.sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.left{
+    flex-basis: 40%;
+}
+footer  input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding-left: 10px;
+}
+footer  button{
+    width: 90px;
+    height: 35px;
+    background: #F3CB60;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.social-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+}
+.social-links img{
+    width: 40px;
+}
+.twit img{
+    width: 33px;
+    margin-top: 3px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.right-sec{
+    padding-bottom: 45px;
+}
